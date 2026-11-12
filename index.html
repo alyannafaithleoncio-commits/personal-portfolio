@@ -121,6 +121,8 @@
     .badges b { display: block; font-weight: 400; font-size: 1.6rem; color: var(--yellow); }
     .badges small { color: var(--muted); font-size: 1.2rem; }
     .badges em { display: block; font-family: var(--px); font-style: normal; font-size: .55rem; color: var(--mint); margin-top: 12px; }
+    .badges .cert { display: block; width: 100%; height: 180px; object-fit: cover; border: 3px solid var(--ink); margin-bottom: 14px; background: repeating-linear-gradient(45deg, var(--bg) 0 12px, var(--panel) 12px 24px); }
+    .badges a:hover .cert { border-color: var(--yellow); }
 
     /* Contact */
     .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; }
@@ -275,9 +277,24 @@
     <h2>Achievements</h2>
     <p class="sub">// badges unlocked: 3</p>
     <ul class="badges">
-      <li class="box"><span class="ic">🏆</span><b>Dean's Lister</b><small>[School Name] · 2024</small><em>UNLOCKED</em></li>
-      <li class="box"><span class="ic">🎓</span><b>Web Development Fundamentals</b><small>Certificate · [Issuer] · 2025</small><em>UNLOCKED</em></li>
-      <li class="box"><span class="ic">🛡️</span><b>Cybersecurity Awareness</b><small>Seminar · [Organizer] · 2025</small><em>UNLOCKED</em></li>
+      <li class="box">
+        <a href="cert1.jpg" target="_blank"><img class="cert" src="cert1.jpg" alt="Dean's Lister certificate" onerror="this.removeAttribute('src')"></a>
+        <b>Dean's Lister</b>
+        <small>[School Name] · 2024</small>
+        <em>UNLOCKED</em>
+      </li>
+      <li class="box">
+        <a href="cert2.jpg" target="_blank"><img class="cert" src="cert2.jpg" alt="Web Development Fundamentals certificate" onerror="this.removeAttribute('src')"></a>
+        <b>Web Development Fundamentals</b>
+        <small>Certificate · [Issuer] · 2025</small>
+        <em>UNLOCKED</em>
+      </li>
+      <li class="box">
+        <a href="cert3.jpg" target="_blank"><img class="cert" src="cert3.jpg" alt="Cybersecurity Awareness seminar certificate" onerror="this.removeAttribute('src')"></a>
+        <b>Cybersecurity Awareness</b>
+        <small>Seminar · [Organizer] · 2025</small>
+        <em>UNLOCKED</em>
+      </li>
     </ul>
   </section>
 
